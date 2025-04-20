@@ -60,17 +60,45 @@ The model achieves strong accuracy on the test set, demonstrating its ability to
 
 ### 📈 Sample Prediction Output
 
+The image below shows a grid of sample predictions from the test set. Each image is labeled with the model’s predicted digit. Most of the predictions match the correct labels, indicating that the model has learned to accurately recognize handwritten digits.
+
+We can observe that:
+
+- **Most predictions are correct**, even for digits written in a less conventional style.
+- The model is particularly confident when the digit is clearly written (e.g., 0, 1, 7).
+- **Misclassifications** are rare but tend to happen when digits are ambiguous or poorly written (e.g., a messy 5 might be mistaken for a 6).
+
+These results highlight the model’s strong generalization ability and robustness to handwriting variation.
+
 ![predictions](./predictions_on_test_set.png)
 
 ---
 
-## ⚙️ Setup
+## 🚀 Installation & Running
 
-### 🧪 Requirements
+To get started, make sure you have the required Python packages installed:
 
-- Python 3.x
-- TensorFlow / Keras
-- NumPy
-- Seaborn
-- Matplotlib
+### 🧪 Required Libraries
 
+Install the following dependencies using pip:
+
+```bash
+pip install tensorflow numpy matplotlib seaborn
+```
+
+### ▶️ Run the Training Script
+
+Run the main script to train the CNN model on the MNIST dataset:
+
+```bash
+python MNIST_HandwritingRecognition.py
+```
+
+This will:
+
+- Load and preprocess the MNIST data
+- Build and train the CNN model
+- Evaluate accuracy on the test set
+- Save model outputs and generate visualizations
+
+---
